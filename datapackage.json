@@ -1,61 +1,66 @@
 {
-  "name": "eu-emissions-trading-system",
-  "title": "European Union Emissions Trading System (EU ETS) data from EUTL",
-  "description": "Data about the EU emission trading system (ETS). The EU emission trading system (ETS) is one of the main measures introduced by the EU to achieve cost-efficient reductions of greenhouse gas emissions and reach its targets under the Kyoto Protocol and other commitments. The data mainly comes from the EU Transaction Log (EUTL). ",
-  "homepage": "http://www.eea.europa.eu/data-and-maps/data/european-union-emissions-trading-scheme-eu-ets-data-from-citl-7/",
-  "version": "19",
+  "name": "genome-sequencing-costs",
+  "title": "Costs assosiated with DNA sequencing since 2001",
+  "description": "For many years, the National Human Genome Research Institute (NHGRI) has tracked the costs associated with DNA sequencing performed at the sequencing centers funded by the Institute. This information has served as an important benchmark for assessing improvements in DNA sequencing technologies and for establishing the DNA sequencing capacity of the NHGRI Genome Sequencing Program (GSP). Here, NHGRI provides an analysis of these data, which gives one view of the remarkable improvements in DNA sequencing technologies and data-production pipelines in recent years.",
+  "homepage": "http://www.genome.gov/sequencingcosts/",
+  "version": "oct2015",
   "license": "ODC-PDDL-1.0",
   "sources": [
     {
-      "name": "EU ETS data",
-      "web": "http://www.eea.europa.eu/data-and-maps/data/european-union-emissions-trading-scheme-eu-ets-data-from-citl-7/eu-ets-data-download-latest-version/citl_v19.zip/at_download/file"
+      "name": "Sequencing Cost Table",
+      "web": "http://www.genome.gov/pages/der/sequencing_costs_oct2015.xlsx"
     }
   ],
   "resources": [
     {
-      "name": "eu-ets",
-      "path": "data/eu-ets.csv",
+      "name": "sequencing costs",
+      "path": "data/sequencing_costs.csv",
       "format": "csv",
       "mediatype": "text/csv",
       "schema": {
         "fields": [
           {
-            "name": "country_code",
-            "type": "string",
-            "description": "International Country Code (ISO 3166-1-Alpha-2 code elements)"
-          },
-          {
-            "name": "country",
-            "type": "string",
-            "description": "Country name"
-          },
-          {
-            "name": "main activity sector name",
-            "type": "string",
-            "description": "Main activity label"
-          },
-          {
-            "name": "ETS information",
-            "type": "string",
-            "description": "ETS information"
-          },
-          {
-            "name": "year",
+            "name": "Date",
             "type": "date",
-            "description": "Annual data (YYYY)"
+            "description": "Date format YYYY-MM"
           },
           {
-            "name": "value",
+            "name": "Cost per Mb",
             "type": "number",
-            "description": "measure value"
+            "description": "The cost of determining one megabase (Mb; a million bases) of DNA sequence of a specified quality"
           },
           {
-            "name": "unit",
-            "type": "string",
-            "description": "Unit of the measure value (in tonne of CO2-equ.)"
+            "name": "Cost per Genome",
+            "type": "number",
+            "description": "The cost of sequencing a human-sized genome"
           }
         ]
       }
     }
+  ],
+  "views": [
+    {
+      "id": "graph1",
+      "label": "Cost per Raw Megabase of DNA Sequence",
+      "resourceName": "sequencing costs",
+      "type": "Graph",
+      "state": {
+        "group": "Date",
+        "series": ["Cost per MB"],
+        "graphType": "lines-and-points"
+      }
+    },
+	{
+      "id": "graph2",
+      "label": "Cost per Genome",
+      "resourceName": "sequencing costs",
+      "type": "Graph",
+      "state": {
+        "group": "Date",
+        "series": ["Cost per Genome"],
+        "graphType": "lines-and-points"
+      }
+    }
   ]
+
 }
