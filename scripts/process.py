@@ -17,7 +17,9 @@ def execute():
     records = records[1:]
     for x in records:
         x[0] = str(x[0].year)+'-'+str(x[0].month)
-    print (records)
+        x[1] = "%.3f" % float(x[1])
+        x[2] = "%.3f" % float(x[2])
+    #print (records)
 
     writer = csv.writer(open(out_path, 'w'), lineterminator='\n')
     writer.writerow(header)
