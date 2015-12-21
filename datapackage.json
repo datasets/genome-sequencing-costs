@@ -39,17 +39,6 @@
     }
   ],
   "views": [
-    {
-      "id": "graph1",
-      "label": "Cost per Raw Megabase of DNA Sequence",
-      "resourceName": "sequencing costs",
-      "type": "Graph",
-      "state": {
-        "group": "Date",
-        "series": ["Cost per MB"],
-        "graphType": "lines-and-points"
-      }
-    },
 	{
       "id": "graph2",
       "label": "Cost per Genome",
