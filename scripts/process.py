@@ -16,7 +16,7 @@ def execute():
     header = ['Date', 'Cost per Mb', 'Cost per Genome']
     records = records[1:]
     for x in records:
-        x[0] = str(x[0].year)+'-'+str(x[0].month)
+        x[0] = str(x[0].year)+'-'+str.zfill(str(x[0].month),2)
         x[1] = "%.3f" % float(x[1])
         x[2] = "%.3f" % float(x[2])
     #print (records)
