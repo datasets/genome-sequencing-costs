@@ -13,7 +13,7 @@
   ],
   "resources": [
     {
-      "name": "sequencing costs",
+      "name": "sequencing-costs",
       "path": "data/sequencing_costs.csv",
       "format": "csv",
       "mediatype": "text/csv",
@@ -22,6 +22,7 @@
           {
             "name": "Date",
             "type": "date",
+            "format": "any",
             "description": "Date format YYYY-MM"
           },
           {
