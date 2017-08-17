@@ -40,17 +40,17 @@
     }
   ],
   "views": [
-	{
-      "id": "graph2",
-      "label": "Cost per Genome",
-      "resourceName": "sequencing costs",
-      "type": "Graph",
-      "state": {
+    {
+      "name": "graph",
+      "title": "The cost of sequencing a human-sized genome",
+      "specType": "simple",
+      "spec": {
+        "type": "lines-and-points",
         "group": "Date",
-        "series": ["Cost per Genome"],
-        "graphType": "lines-and-points"
+        "series": [
+          "Cost per Genome"
+        ]
       }
     }
   ]
-
 }
