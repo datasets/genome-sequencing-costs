@@ -8,7 +8,8 @@
   "sources": [
     {
       "name": "Sequencing Cost Table",
-      "web": "http://www.genome.gov/pages/der/sequencing_costs_oct2015.xlsx"
+      "web": "http://www.genome.gov/pages/der/sequencing_costs_oct2015.xlsx",
+      "title": "Sequencing Cost Table"
     }
   ],
   "resources": [
