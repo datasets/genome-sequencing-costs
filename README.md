@@ -22,7 +22,7 @@ DNA Sequencing Costs
   * Name: National Human Genome Research Institute
   * Web: http://www.genome.gov/pages/der/sequencing_costs_oct2015.xlsx
 
-## Data Preparation
+## Preparation
 
 ### Requirements
 
