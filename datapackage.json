@@ -4,11 +4,17 @@
   "description": "For many years, the National Human Genome Research Institute (NHGRI) has tracked the costs associated with DNA sequencing performed at the sequencing centers funded by the Institute. This information has served as an important benchmark for assessing improvements in DNA sequencing technologies and for establishing the DNA sequencing capacity of the NHGRI Genome Sequencing Program (GSP). Here, NHGRI provides an analysis of these data, which gives one view of the remarkable improvements in DNA sequencing technologies and data-production pipelines in recent years.",
   "homepage": "http://www.genome.gov/sequencingcosts/",
   "version": "oct2015",
-  "license": "ODC-PDDL-1.0",
+  "licenses": [
+    {
+      "name": "ODC-PDDL-1.0",
+      "path": "http://opendatacommons.org/licenses/pddl/",
+      "title": "Open Data Commons Public Domain Dedication and License v1.0"
+    }
+  ]
   "sources": [
     {
       "name": "Sequencing Cost Table",
-      "web": "http://www.genome.gov/pages/der/sequencing_costs_oct2015.xlsx",
+      "path": "http://www.genome.gov/pages/der/sequencing_costs_oct2015.xlsx",
       "title": "Sequencing Cost Table"
     }
   ],
