@@ -1,6 +1,6 @@
 {
   "name": "genome-sequencing-costs",
-  "title": "Costs assosiated with DNA sequencing since 2001",
+  "title": "Costs associated with DNA sequencing since 2001",
   "description": "For many years, the National Human Genome Research Institute (NHGRI) has tracked the costs associated with DNA sequencing performed at the sequencing centers funded by the Institute. This information has served as an important benchmark for assessing improvements in DNA sequencing technologies and for establishing the DNA sequencing capacity of the NHGRI Genome Sequencing Program (GSP). Here, NHGRI provides an analysis of these data, which gives one view of the remarkable improvements in DNA sequencing technologies and data-production pipelines in recent years.",
   "homepage": "https://www.genome.gov/about-genomics/fact-sheets/DNA-Sequencing-Costs-Data",
   "version": "may2022",
