@@ -50,9 +50,10 @@
     {
       "name": "graph",
       "title": "The cost of sequencing a human-sized genome",
+      "resourceName": "sequencing-costs",
       "specType": "simple",
       "spec": {
-        "type": "lines-and-points",
+        "type": "line",
         "group": "Date",
         "series": [
           "Cost per Genome"
